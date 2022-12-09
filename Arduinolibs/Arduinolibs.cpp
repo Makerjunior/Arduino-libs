@@ -2,9 +2,9 @@
 #include "arduinolibs.h"
 
 // Logica da Blibioteca
-// Método construtor da clase que é chamado altomaticamente quando instaciamos um Objeto da classe. 
+// 
 
-
+    // Metodos da classe 
 void Arduinolibs::piscaTempo(int _pin ,int ms){
   pinMode(_pin, OUTPUT);
   static bool estado = false;
@@ -16,11 +16,13 @@ void Arduinolibs::piscaTempo(int _pin ,int ms){
 
 }
 
+// Metodo que retorna a leitura de um pino
 int Arduinolibs::leituraPin(int _pn)
 {  pinMode(_pn, INPUT_PULLUP);
     return  digitalRead(_pn);
 }
 
+// Método de acionamento com botão 
 void Arduinolibs::acionamento(int btn, int porta)
 {
   pinMode(btn,INPUT_PULLUP);
