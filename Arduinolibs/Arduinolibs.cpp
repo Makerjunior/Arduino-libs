@@ -23,8 +23,8 @@ int Arduinolibs::leituraPin(int _pn)
 
 void Arduinolibs::acionamento(int btn, int porta)
 {
-    bool estadoanterior = false ;
-  bool estadobotao = digitalRead(btn);
+  static  bool estadoanterior = false ;
+static  bool estadobotao = digitalRead(btn);
     bool  ligado = false;
   if((!estadobotao) && (estadoanterior))
     {ligado = true;}
