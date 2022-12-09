@@ -25,18 +25,10 @@ void Arduinolibs::acionamento(int btn, int porta)
 {
   pinMode(btn,INPUT_PULLUP);
   pinMode(porta,OUTPUT);
-  digitalWrite(porta,digitalRead(btn));
+  this->estado = digitalRead(btn)
+  digitalWrite(porta,this->estado);
  
-static  bool estadoanterior = false ;
-static  bool estadobotao = digitalRead(btn);
-    bool  ligado = false;
-  if((!estadobotao) && (estadoanterior))
-    {ligado = true;}
-estadoanterior = estadobotao; 
-  digitalWrite(porta,ligado);
-
-  
-}
+ }
 
 
 
