@@ -1,5 +1,5 @@
-#ifndef piscaled
-#define piscaled
+#ifndef Arduinolibs
+#define Arduinolibs
 #include "Arduino.h"
 class Arduinolibs{
     public:

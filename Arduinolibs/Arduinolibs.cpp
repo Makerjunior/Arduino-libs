@@ -18,11 +18,6 @@ void Arduinolibs::piscaTempo(int _pin ,int ms){
 
 }
 
-int Arduinolibs::leituraPin(int _pn)
-{  
-    return  digitalRead(_pn);
-}
-
 void Arduinolibs::acionamento(int btn, int porta)
 {
     bool estadoanterior = false ;
@@ -33,6 +28,13 @@ void Arduinolibs::acionamento(int btn, int porta)
 estadoanterior = estadobotao; 
   digitalWrite(porta,ligado);
 }
+
+int Arduinolibs::leituraPin(int _pn)
+{  
+    return  digitalRead(_pn);
+}
+
+
 
 /*
 
