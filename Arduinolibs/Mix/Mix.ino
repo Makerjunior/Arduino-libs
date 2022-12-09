@@ -13,7 +13,7 @@ Serial.println( leitura);
 
 
 
-//ObjExemplo.piscaTempo(13,500);
+ObjExemplo.piscaTempo(13,500);
 
 ObjExemplo.acionamento(2,13);
 }
