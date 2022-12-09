@@ -1,5 +1,5 @@
-#ifndef Arduinolibs
-#define Arduinolibs
+#ifndef arduinolibs
+#define arduinolibs
 #include "Arduino.h"
 class Arduinolibs{
     public:
