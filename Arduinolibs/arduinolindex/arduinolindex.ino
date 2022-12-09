@@ -7,10 +7,13 @@ Serial.begin(9600);
 }
 
 void loop(){
- int leitura = ObjExemplo.leituraPin(10);
-Serial.println( "Leitura do botão = "+ leitura);
+ int leitura = ObjExemplo.leituraPin(7);
+Serial.print( "Leitura do botão = ");
+Serial.println( leitura);
 
-ObjExemplo.piscaTempo(13,500);
 
-ObjExemplo.acionamento(2,11);
+
+//ObjExemplo.piscaTempo(13,500);
+
+ObjExemplo.acionamento(2,13);
 }

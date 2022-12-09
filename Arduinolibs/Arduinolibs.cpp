@@ -6,7 +6,7 @@
 
 
 void Arduinolibs::piscaTempo(int _pin ,int ms){
-
+  pinMode(_pin, OUTPUT);
   static bool estado = false;
   static unsigned long tempodelay;
   if(millis() - tempodelay > ms )
@@ -17,12 +17,15 @@ void Arduinolibs::piscaTempo(int _pin ,int ms){
 }
 
 int Arduinolibs::leituraPin(int _pn)
-{  
+{  pinMode(_pn, INPUT_PULLUP);
     return  digitalRead(_pn);
 }
 
 void Arduinolibs::acionamento(int btn, int porta)
 {
+  pinMode(btn,INPUT_PULLUP);
+  pinMode(porta,OUTPUT);
+
   static  bool estadoanterior = false ;
 static  bool estadobotao = digitalRead(btn);
     bool  ligado = false;
