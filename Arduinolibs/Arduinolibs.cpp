@@ -1,5 +1,5 @@
 #include "Arduino.h"
-#include "Arduinolibs.h"
+#include "arduinolibs.h"
 
 // Logica da Blibioteca
 // Método construtor da clase que é chamado altomaticamente quando instaciamos um Objeto da classe. 

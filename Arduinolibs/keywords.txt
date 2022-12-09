@@ -1,4 +1,4 @@
-Arduinolibs KEYWORD1 
+arduinolibs KEYWORD1 
 leituraPin  KEYWORD2 
 acionamento KEYWORD2
 piscaTempo KEYWORD2
