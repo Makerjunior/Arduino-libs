@@ -3,9 +3,7 @@
 
 // Logica da Blibioteca
 // Método construtor da clase que é chamado altomaticamente quando instaciamos um Objeto da classe. 
-Arduinolibs::pisca(){     
 
-}
 
 void Arduinolibs::piscaTempo(int _pin ,int ms){
 
@@ -13,9 +11,14 @@ void Arduinolibs::piscaTempo(int _pin ,int ms){
   static unsigned long tempodelay;
   if(millis() - tempodelay > ms )
   {estado = !estado ;
-    digitalWrite(led,estado);
+    digitalWrite(_pin,estado);
    tempodelay = millis();}
 
+}
+
+int Arduinolibs::leituraPin(int _pn)
+{  
+    return  digitalRead(_pn);
 }
 
 void Arduinolibs::acionamento(int btn, int porta)
@@ -29,10 +32,7 @@ estadoanterior = estadobotao;
   digitalWrite(porta,ligado);
 }
 
-int Arduinolibs::leituraPin(int _pn)
-{  
-    return  digitalRead(_pn);
-}
+
 
 
 
