@@ -1,6 +1,8 @@
 #include <arduinolibs.h>
 
-Arduinolibs ObjExemplo;
+// Exemplo dos Métodos da classe
+
+Arduinolibs ObjExemplo; // Objeto da classe 
 
 void setup(){
 Serial.begin(9600);
